@@ -1,0 +1,30 @@
+/* BlackOak Global — Design Tokens
+ * Behringer-minimal, adapted for a Dubai PE firm.
+ * Single restrained accent, editorial serif, generous whitespace.
+ */
+
+@theme {
+  /* Colors */
+  --color-ink: #0e0e0e;
+  --color-ink-soft: #1a1a1a;
+  --color-paper: #f5f5f2;
+  --color-paper-soft: #eceae5;
+  --color-bone: #ffffff;
+  --color-accent: #8a5a3b;
+  --color-accent-soft: #b78c69;
+  --color-muted: #6b6b6b;
+  --color-muted-soft: #9a9a9a;
+  --color-hairline: rgba(14, 14, 14, 0.08);
+  --color-hairline-strong: rgba(14, 14, 14, 0.16);
+
+  /* Fonts (set via next/font in layout.tsx)
+   * Ardian-style: Futura for everything, with a serif italic accent.
+   * Jost is the free Google Fonts substitute for the licensed Futura. */
+  --font-sans: var(--font-jost), "Jost", "Futura", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif-italic: var(--font-fraunces), "Fraunces", Georgia, serif;
+
+  /* Spacing / rhythm */
+  --section-pad-y: clamp(6rem, 12vw, 12rem);
+  --container-max: 88rem; /* 1408px */
+  --gutter-x: clamp(1.25rem, 4vw, 3rem);
+}
