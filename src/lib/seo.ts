@@ -1,6 +1,22 @@
 import type { Metadata } from "next";
 
-const SITE_URL = process.env.SITE_URL ?? "https://blackoakglobal.com";
+const DEFAULT_SITE_URL = "https://blackoakglobal.com";
+
+// Normalise: ignore empty / whitespace values (which slip past `??`), strip
+// trailing slashes, and fall back to the canonical URL when unset or invalid.
+function normaliseSiteUrl(raw: string | undefined): string {
+  const trimmed = raw?.trim();
+  if (!trimmed) return DEFAULT_SITE_URL;
+  try {
+    return new URL(trimmed).toString().replace(/\/$/, "");
+  } catch {
+    return DEFAULT_SITE_URL;
+  }
+}
+
+const SITE_URL = normaliseSiteUrl(
+  process.env.SITE_URL ?? process.env.NEXT_PUBLIC_SITE_URL,
+);
 const SITE_NAME = "BlackOak Global";
 const DEFAULT_DESCRIPTION =
   "BlackOak Global — an international private-equity real estate and investment firm. Capital deployed with conviction across the UAE, UK, and select global markets.";
