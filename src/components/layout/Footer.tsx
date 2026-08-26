@@ -28,7 +28,7 @@ const linkCols = [
     title: "Insights",
     links: [
       { label: "All Insights", href: "/insights" },
-      { label: "The BlackOak Report", href: "/report" },
+      { label: "The Gulf Capital Report", href: "/report" },
       { label: "Portfolio", href: "/portfolio" },
       // Investor Portal link hidden for now
     ],

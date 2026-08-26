@@ -39,8 +39,8 @@ export function Hero() {
         aria-hidden="true"
         className="absolute inset-0 h-full w-full object-cover"
       >
-        <source src="/video/hero-placeholder-1920.mp4" type="video/mp4" />
-        <source src="/video/hero-placeholder-960.mp4" type="video/mp4" />
+        <source src="/video/Blackoak_Global-1920.mp4" type="video/mp4" media="(min-width: 768px)" />
+        <source src="/video/Blackoak_Global-960.mp4" type="video/mp4" />
       </video>
 
       {/* Scrim — layered gradients keep the copy readable on any frame */}
@@ -129,14 +129,6 @@ export function Hero() {
         </Container>
       </div>
 
-      {/* Scroll cue — hidden on mobile where it competes with CTAs */}
-      <div
-        aria-hidden
-        className="hidden md:flex absolute left-1/2 bottom-8 -translate-x-1/2 z-10 flex-col items-center gap-2 text-[var(--color-paper)]/60"
-      >
-        <span className="text-[9px] uppercase tracking-[0.32em]">Scroll</span>
-        <span className="block h-8 w-px bg-[var(--color-paper)]/40" />
-      </div>
     </section>
   );
 }

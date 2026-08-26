@@ -70,7 +70,7 @@ export const firm = {
       country: "United Kingdom",
       address: "71–75 Shelton Street, Covent Garden, London WC2H 9JQ",
       phone: "+44 (0) 203 905 5501",
-      image: "/images/about-buildings.jpg",
+      image: "/images/london-big-ben.jpg",
     },
   ],
   geographies: ["Dubai", "Abu Dhabi", "London", "Frontier & Emerging Markets"],

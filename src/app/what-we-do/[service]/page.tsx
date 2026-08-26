@@ -135,7 +135,6 @@ export default async function ServicePage({
               <AnchorNumber
                 value={s.anchor.value}
                 label={s.anchor.label}
-                size="hero"
                 className="mt-10"
               />
             </div>

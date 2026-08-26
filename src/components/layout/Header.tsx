@@ -12,7 +12,7 @@ import { primaryNav, type NavItem } from "./nav-data";
 
 // -----------------------------------------------------------------------------
 // Ardian-style header:
-//   • Utility strip on top (locale · investor reports · portal button)
+//   • Utility strip on top (locale · the gulf capital report · portal button)
 //   • Primary nav below (logo left, menu right, right-aligned)
 //   • Transparent-with-scrim over hero; paper-solid when mega-menu is open
 //   • Full-width mega menus on hover / focus / click
@@ -146,7 +146,7 @@ export function Header() {
                   : "text-white/70 hover:text-white",
               )}
             >
-              Investor Report
+              The Gulf Capital Report
             </Link>
             {/* Investor Portal + EN language switcher hidden for now. Route
               * (/investors) and middleware remain intact — re-enable by

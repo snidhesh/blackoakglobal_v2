@@ -34,7 +34,7 @@ export const services: Service[] = [
     slug: "investments",
     title: "Investments",
     subtitle: "Diversified capital deployment across the capital stack.",
-    image: "/images/hero-2.webp",
+    image: "/images/hero-3.webp",
     heading: "Strategic Capital Deployment",
     body: [
       "BlackOak Global’s investment philosophy is grounded in a fundamental belief in long-term value creation. We deploy capital across the capital stack — from equity to debt — in order to optimize risk-adjusted returns for our stakeholders.",
@@ -54,7 +54,7 @@ export const services: Service[] = [
     slug: "private-funds",
     title: "Private Funds & REITs",
     subtitle: "Bespoke fund vehicles for institutional partners.",
-    image: "/images/hero-3.webp",
+    image: "/images/hero-1.webp",
     heading: "Tailored Fiduciary Solutions",
     body: [
       "We structure and manage private investment funds tailored to the unique objectives of institutional investors, family offices, and sovereign wealth funds. Our fund management platform offers transparent governance, rigorous reporting, and efficient capital administration.",
@@ -74,7 +74,7 @@ export const services: Service[] = [
     slug: "asset-management",
     title: "Development & Asset Management",
     subtitle: "Hands-on delivery from acquisition through active management.",
-    image: "/images/about-buildings.jpg",
+    image: "/images/who-we-are.webp",
     heading: "Proactive Value Preservation",
     body: [
       "Our Asset Management team takes a hands-on approach to every property in our portfolio, focusing on operational excellence and tenant satisfaction. We develop comprehensive business plans for each asset, identifying opportunities to reduce costs, improve sustainability, and enhance revenue.",
@@ -113,7 +113,7 @@ export const services: Service[] = [
     slug: "consulting",
     title: "Advisory & Consulting",
     subtitle: "Expert advisory for complex real estate challenges.",
-    image: "/images/who-we-are.webp",
+    image: "/images/Dubai_Skyline.jpg",
     heading: "Strategic Real Estate Advisory",
     body: [
       "We offer bespoke consulting services to property owners, investors, and developers facing complex real estate challenges. Our advisory practice leverages our firm’s broad expertise to provide actionable insights and strategic solutions.",

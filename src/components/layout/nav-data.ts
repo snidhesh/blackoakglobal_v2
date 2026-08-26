@@ -36,7 +36,6 @@ export const primaryNav: NavItem[] = [
           title: "People",
           links: [
             { label: "Leadership", href: "/leadership" },
-            { label: "Who We Serve", href: "/who-we-serve" },
           ],
         },
         {
@@ -84,6 +83,39 @@ export const primaryNav: NavItem[] = [
       ctaHref: "/portfolio",
     },
   },
+  {
+    label: "Who We Serve",
+    href: "/who-we-serve",
+    mega: {
+      blurb: "A small number of principals each year — from private capital to sovereign mandates.",
+      discoverHref: "/who-we-serve",
+      columns: [
+        {
+          title: "Private Capital",
+          links: [
+            { label: "High-Net-Worth Individuals", href: "/who-we-serve#profile-01" },
+            { label: "UHNW & Family Principals", href: "/who-we-serve#profile-02" },
+          ],
+        },
+        {
+          title: "Institutional Capital",
+          links: [
+            { label: "Single & Multi-Family Offices", href: "/who-we-serve#profile-03" },
+            { label: "Institutional Investors", href: "/who-we-serve#profile-04" },
+          ],
+        },
+        {
+          title: "Strategic Capital",
+          links: [
+            { label: "Sovereign Wealth Funds", href: "/who-we-serve#profile-05" },
+            { label: "Developers & Capital Partners", href: "/who-we-serve#profile-06" },
+          ],
+        },
+      ],
+      ctaLabel: "Why BlackOak",
+      ctaHref: "/who-we-serve#why-blackoak",
+    },
+  },
   { label: "Portfolio", href: "/portfolio" },
   {
     label: "Insights",
@@ -103,7 +135,7 @@ export const primaryNav: NavItem[] = [
         {
           title: "The Firm",
           links: [
-            { label: "The BlackOak Report", href: "/report" },
+            { label: "The Gulf Capital Report", href: "/report" },
             // Investor Portal link hidden for now
           ],
         },
@@ -112,6 +144,5 @@ export const primaryNav: NavItem[] = [
       ctaHref: "/insights/capital-and-conflict-march-2026",
     },
   },
-  { label: "Sustainability", href: "/sustainability" },
   { label: "Contact", href: "/contact" },
 ];

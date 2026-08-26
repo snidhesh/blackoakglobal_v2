@@ -63,6 +63,7 @@ export const team: TeamGroup[] = [
       {
         slug: "abbas-junejo",
         name: "Abbas Junejo",
+        title: "Head of Research & Development Strategy",
         region: "UAE",
         image: "/team/abbas-junejo.jpg",
         bio: [
@@ -74,7 +75,7 @@ export const team: TeamGroup[] = [
       {
         slug: "samir-saddy",
         name: "Samir Saddy",
-        title: "Chartered Accountant",
+        title: "Head of International Strategic Advisory",
         region: "UAE",
         image: "/team/samir-saddy.jpg",
         bio: [
@@ -84,15 +85,12 @@ export const team: TeamGroup[] = [
         ],
       },
       {
-        slug: "sagheer-mohammed",
-        name: "Sagheer Mohammed",
-        region: "UAE / UK",
+        slug: "sarah-malik",
+        name: "Sarah Malik",
+        title: "Legal",
+        region: "UAE",
         image: "/team/no-image.svg",
-        bio: [
-          "Sagheer was formerly an in-house lawyer to one of the world’s largest investment banks in London before relocating to Dubai to head the Capital Markets and Investment Banking team at a top-tier law firm renowned for advising the Dubai Government and members of the Dubai royal family.",
-          "Sagheer was lead counsel for the Government of Dubai (Department of Civil Aviation) on the then-largest ever Sukuk bond deal (over US$4 billion) to finance the expansion of Dubai International Airport. He was ranked as a leading lawyer by Legal 500 and Chambers & Partners.",
-          "In 2007, Sagheer established Praesidium LLP, an investment banking consultancy at DIFC, and later co-founded One Road Capital, launching the world’s first Belt and Road REIT. He is currently a partner and advisor at BlackOak Real Estate and BlackOak Global.",
-        ],
+        bio: ["Profile coming soon."],
       },
     ],
   },
@@ -102,25 +100,12 @@ export const team: TeamGroup[] = [
       {
         slug: "simon-townsend",
         name: "Simon Townsend",
-        title: "Chartered Surveyor",
         region: "UAE / UK",
         image: "/team/simon-townsend.png",
         linkedin: "https://www.linkedin.com/in/simon-townsend-882b6812/",
         bio: [
           "Simon is a Chartered Surveyor with more than 28 years of real estate investment and advisory experience — more than 23 years internationally, particularly focused on the Middle East. Simon has established and led multi-discipline real estate teams, including leading Advisory at CBRE in the Middle East for 10 years and founding CBRE Saudi Arabia.",
           "Simon has undertaken more than US$1.5 billion of local, regional, and international real estate investment transactions across Europe, Asia, and the United States for institutional and private investors, sovereign wealth funds, and prominent ruling and local families. He has advised on due diligence, appraisal, investment structuring, portfolio optimization, and expert witness engagements on deals valued in excess of US$3 billion.",
-        ],
-      },
-      {
-        slug: "sarah-walker",
-        name: "Sarah Walker",
-        region: "UK",
-        image: "/team/sarah-walker.png",
-        linkedin: "https://www.linkedin.com/in/sarahjwalker/",
-        bio: [
-          "Sarah is an experienced private equity investor and non-executive director specializing in value creation for mid-market private equity funds and portfolio companies. Most recently, she led investment and portfolio management in the UK & Ireland for Bluegem Capital Partners LLP.",
-          "Sarah has also held senior roles at Bridgepoint Group plc and Centrica plc, and began her career in Corporate Finance at Deloitte LLP, where she qualified as a Chartered Accountant.",
-          "She holds an MA in Economics from Cambridge University, an MSc in Management Research from Oxford University, and an Executive MBA with Distinction from London Business School.",
         ],
       },
       {
@@ -142,6 +127,18 @@ export const team: TeamGroup[] = [
         bio: [
           "Michael is a senior advisor operating across global finance, mergers & acquisitions, and strategic luxury goods partnerships. Through his executive advisory platform, he supports principals, founders, and institutional partners on cross-border transactions and high-touch private investment opportunities.",
           "His work spans capital introductions, deal structuring, and bespoke partnership development for ventures and operating businesses at the intersection of finance and the luxury sector.",
+        ],
+      },
+      {
+        slug: "sarah-walker",
+        name: "Sarah Walker",
+        region: "UK",
+        image: "/team/sarah-walker.png",
+        linkedin: "https://www.linkedin.com/in/sarahjwalker/",
+        bio: [
+          "Sarah is an experienced private equity investor and non-executive director specializing in value creation for mid-market private equity funds and portfolio companies. Most recently, she led investment and portfolio management in the UK & Ireland for Bluegem Capital Partners LLP.",
+          "Sarah has also held senior roles at Bridgepoint Group plc and Centrica plc, and began her career in Corporate Finance at Deloitte LLP, where she qualified as a Chartered Accountant.",
+          "She holds an MA in Economics from Cambridge University, an MSc in Management Research from Oxford University, and an Executive MBA with Distinction from London Business School.",
         ],
       },
       {

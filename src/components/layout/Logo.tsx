@@ -13,9 +13,9 @@ type Props = {
 const NATIVE_ASPECT = 2016 / 531;
 
 const sizeMap = {
-  sm: 28, // header on mobile
-  md: 34, // header on desktop
-  lg: 44, // footer / large moments
+  sm: 36, // header on mobile
+  md: 46, // header on desktop
+  lg: 58, // footer / large moments
 };
 
 export function Logo({ className, tone = "ink", size = "md" }: Props) {

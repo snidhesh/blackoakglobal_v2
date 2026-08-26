@@ -44,7 +44,7 @@ export default function SustainabilityPage() {
       </Section>
 
       {/* Three pillars */}
-      <Section tone="paper" pad="loose">
+      <Section id="pillars" tone="paper" pad="loose">
         <Container>
           <div className="mb-16 md:mb-20">
             <Reveal>

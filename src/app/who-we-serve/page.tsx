@@ -58,30 +58,31 @@ export default function WhoWeServePage() {
           </div>
           <div className="grid gap-px border border-[var(--color-hairline)] bg-[var(--color-hairline)] md:grid-cols-2 lg:grid-cols-3">
             {clientProfiles.map((p, i) => (
-              <Reveal
-                key={p.num}
-                delay={i * 0.04}
-                className="bg-[var(--color-paper)] p-8 md:p-12 flex flex-col"
-              >
-                <div className="font-editorial text-4xl md:text-5xl text-[var(--color-accent)] tabular">
-                  {p.num}
-                </div>
-                <div className="mt-6 section-mark">{p.type}</div>
-                <h3 className="mt-4 font-editorial text-xl md:text-2xl leading-tight text-[var(--color-ink)]">
-                  {p.title}
-                </h3>
-                <div className="my-6 h-px w-12 bg-[var(--color-ink)]" />
-                <p className="text-sm leading-relaxed text-[var(--color-muted)]">
-                  {p.body}
-                </p>
-              </Reveal>
+              <div key={p.num} id={`profile-${p.num}`}>
+                <Reveal
+                  delay={i * 0.04}
+                  className="bg-[var(--color-paper)] p-8 md:p-12 flex flex-col h-full"
+                >
+                  <div className="font-editorial text-4xl md:text-5xl text-[var(--color-accent)] tabular">
+                    {p.num}
+                  </div>
+                  <div className="mt-6 section-mark">{p.type}</div>
+                  <h3 className="mt-4 font-editorial text-xl md:text-2xl leading-tight text-[var(--color-ink)]">
+                    {p.title}
+                  </h3>
+                  <div className="my-6 h-px w-12 bg-[var(--color-ink)]" />
+                  <p className="text-sm leading-relaxed text-[var(--color-muted)]">
+                    {p.body}
+                  </p>
+                </Reveal>
+              </div>
             ))}
           </div>
         </Container>
       </Section>
 
       {/* Distinction pillars */}
-      <Section tone="bone" pad="loose">
+      <Section id="why-blackoak" tone="bone" pad="loose">
         <Container>
           <div className="grid gap-16 lg:grid-cols-12">
             <div className="lg:col-span-5">

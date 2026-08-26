@@ -12,6 +12,15 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  /* Offset in-page anchor jumps so the fixed header doesn't cover the target.
+   * Header is ~76px on mobile (no utility strip) and ~112px at md+ (strip + nav). */
+  scroll-padding-top: 96px;
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 128px;
+  }
 }
 
 body {

@@ -61,7 +61,7 @@ export default function FirmPage() {
       </Section>
 
       {/* Values — IKEA */}
-      <Section tone="paper" pad="loose">
+      <Section id="values" tone="paper" pad="loose">
         <Container>
           <div className="mb-16 md:mb-20">
             <Reveal>
@@ -96,7 +96,7 @@ export default function FirmPage() {
       </Section>
 
       {/* Timeline */}
-      <Section tone="bone" pad="loose">
+      <Section id="heritage" tone="bone" pad="loose">
         <Container>
           <div className="mb-16 md:mb-20">
             <Reveal>
@@ -132,7 +132,7 @@ export default function FirmPage() {
       </Section>
 
       {/* Offices */}
-      <Section tone="paper" pad="loose">
+      <Section id="offices" tone="paper" pad="loose">
         <Container>
           <div className="mb-16">
             <Reveal>
