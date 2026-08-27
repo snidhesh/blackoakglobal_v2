@@ -44,7 +44,7 @@ export const deals: Deal[] = [
     strategy: "Development",
     status: "Exited",
     year: 2026,
-    image: "/images/hero-banner.webp",
+    image: "/images/branded-development.webp",
     anchor: { value: "4", label: "Lifecycle stages executed end-to-end" },
     summary:
       "A branded-development programme carried across the full mandate lifecycle — acquisition, approvals, partner selection, and exit.",
@@ -139,7 +139,7 @@ export const deals: Deal[] = [
     strategy: "Underwriting",
     status: "Completed",
     year: 2026,
-    image: "/images/hero-2.webp",
+    image: "/images/institutional-hotel.webp",
     anchor: { value: "Fund-grade", label: "Underwriting workstream for institutional hotel acquisition" },
     summary:
       "Institutional-grade underwriting workstream supporting a fund's hotel acquisition — trading analysis, operator diligence, and capex modelling.",
@@ -177,7 +177,7 @@ export const deals: Deal[] = [
     strategy: "M&A (or Special Situations)",
     status: "Completed",
     year: 2026,
-    image: "/images/dubai-aerial-hero1.jpg",
+    image: "/images/uae-logistics-fund.webp",
     anchor: { value: "Cross-border", label: "UAE logistics fund with cross-border M&A execution" },
     summary:
       "A UAE logistics fund paired with a cross-border M&A transaction — fund formation, target selection, and multi-jurisdiction closing coordination.",
