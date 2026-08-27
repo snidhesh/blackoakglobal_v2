@@ -95,41 +95,43 @@ export default function FirmPage() {
         </Container>
       </Section>
 
-      {/* Timeline */}
-      <Section id="heritage" tone="bone" pad="loose">
-        <Container>
-          <div className="mb-16 md:mb-20">
-            <Reveal>
-              <SectionMark>Heritage</SectionMark>
-            </Reveal>
-            <Reveal delay={0.05}>
-              <h2 className="mt-8 font-editorial text-[clamp(2rem,4.5vw,3.75rem)] leading-[1.05] text-[var(--color-ink)] max-w-3xl">
-                Two decades. One trajectory.
-              </h2>
-            </Reveal>
-          </div>
-          <ol className="grid gap-0 border-t border-[var(--color-hairline-strong)]">
-            {firm.timeline.map((entry, i) => (
-              <Reveal
-                key={entry.year}
-                delay={i * 0.04}
-                className="grid gap-8 md:grid-cols-12 items-start border-b border-[var(--color-hairline)] py-10 md:py-14"
-              >
-                <div className="md:col-span-3">
-                  <div className="font-editorial text-5xl md:text-6xl tabular text-[var(--color-ink)]">
-                    {entry.year}
-                  </div>
-                </div>
-                <div className="md:col-span-9 md:pl-12 md:border-l md:border-[var(--color-hairline)]">
-                  <p className="text-lg md:text-xl leading-relaxed text-[var(--color-ink)]/80 max-w-2xl">
-                    {entry.body}
-                  </p>
-                </div>
+      {/* Heritage / Timeline section temporarily hidden — restore by removing `false &&`. */}
+      {false && (
+        <Section id="heritage" tone="bone" pad="loose">
+          <Container>
+            <div className="mb-16 md:mb-20">
+              <Reveal>
+                <SectionMark>Heritage</SectionMark>
               </Reveal>
-            ))}
-          </ol>
-        </Container>
-      </Section>
+              <Reveal delay={0.05}>
+                <h2 className="mt-8 font-editorial text-[clamp(2rem,4.5vw,3.75rem)] leading-[1.05] text-[var(--color-ink)] max-w-3xl">
+                  Two decades. One trajectory.
+                </h2>
+              </Reveal>
+            </div>
+            <ol className="grid gap-0 border-t border-[var(--color-hairline-strong)]">
+              {firm.timeline.map((entry, i) => (
+                <Reveal
+                  key={entry.year}
+                  delay={i * 0.04}
+                  className="grid gap-8 md:grid-cols-12 items-start border-b border-[var(--color-hairline)] py-10 md:py-14"
+                >
+                  <div className="md:col-span-3">
+                    <div className="font-editorial text-5xl md:text-6xl tabular text-[var(--color-ink)]">
+                      {entry.year}
+                    </div>
+                  </div>
+                  <div className="md:col-span-9 md:pl-12 md:border-l md:border-[var(--color-hairline)]">
+                    <p className="text-lg md:text-xl leading-relaxed text-[var(--color-ink)]/80 max-w-2xl">
+                      {entry.body}
+                    </p>
+                  </div>
+                </Reveal>
+              ))}
+            </ol>
+          </Container>
+        </Section>
+      )}
 
       {/* Offices */}
       <Section id="offices" tone="paper" pad="loose">

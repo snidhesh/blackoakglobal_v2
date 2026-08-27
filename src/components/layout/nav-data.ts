@@ -28,7 +28,6 @@ export const primaryNav: NavItem[] = [
           links: [
             { label: "The Firm", href: "/firm" },
             { label: "Values", href: "/firm#values" },
-            { label: "Heritage", href: "/firm#heritage" },
             { label: "Offices", href: "/firm#offices" },
           ],
         },

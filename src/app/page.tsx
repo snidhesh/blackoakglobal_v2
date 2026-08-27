@@ -88,19 +88,17 @@ export default function HomePage() {
       {/* What we do — service tiles */}
       <Section tone="paper" pad="loose">
         <Container>
-          <div className="mb-16 md:mb-20 lg:mb-24 grid gap-8 lg:grid-cols-12 items-end">
-            <div className="lg:col-span-8">
-              <Reveal>
-                <SectionMark>What We Do</SectionMark>
-              </Reveal>
-              <Reveal delay={0.05}>
-                <h2 className="mt-8 font-editorial text-[clamp(2rem,4.5vw,3.75rem)] leading-[1.05] text-[var(--color-ink)]">
-                  Six practices, one philosophy.
-                </h2>
-              </Reveal>
-            </div>
-            <Reveal delay={0.1} className="lg:col-span-4 lg:text-right">
-              <p className="text-[var(--color-muted)] leading-relaxed">
+          <div className="mb-16 md:mb-20 lg:mb-24 max-w-3xl">
+            <Reveal>
+              <SectionMark>What We Do</SectionMark>
+            </Reveal>
+            <Reveal delay={0.05}>
+              <h2 className="mt-8 font-editorial text-[clamp(2rem,4.5vw,3.75rem)] leading-[1.05] text-[var(--color-ink)]">
+                Six practices, one philosophy.
+              </h2>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <p className="mt-6 text-lg text-[var(--color-muted)] leading-relaxed max-w-xl">
                 From private equity real estate to merchant banking — a single, discretion-first firm.
               </p>
             </Reveal>
@@ -114,7 +112,7 @@ export default function HomePage() {
         <Container>
           <div className="mb-16">
             <Reveal>
-              <SectionMark>Insight</SectionMark>
+              <SectionMark>Insights</SectionMark>
             </Reveal>
           </div>
           <FeaturedInsight />

@@ -57,7 +57,7 @@ export function LeadershipGrid({ groups }: { groups: TeamGroup[] }) {
                       delay={i * 0.06}
                       onOpen={() => setSelected(m)}
                     />
-                    {group.title === "Advisory Board" && i === 2 && (
+                    {group.title === "Advisory Board" && i === 3 && (
                       <div aria-hidden className="hidden md:block basis-full w-0" />
                     )}
                   </Fragment>

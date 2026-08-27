@@ -1,7 +1,7 @@
 export const firm = {
   tagline: "Capital Deployed with Conviction.",
   positioning:
-    "BlackOak Global is an international investment firm pursuing value-driven opportunities in private equity real estate — delivering institutional-grade returns across the UAE, UK, and select global markets.",
+    "BlackOak Global is a principal investment firm deploying capital into private equity real estate across the UAE, UK, and high-conviction global corridors. We structure, develop, and manage assets for institutional-grade returns.",
   metrics: [
     { value: "$3B+", label: "Transaction value advised globally" },
     { value: "20+", label: "Transactions and mandates completed" },

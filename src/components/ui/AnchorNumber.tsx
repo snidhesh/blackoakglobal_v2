@@ -14,8 +14,8 @@ type Props = {
 export function AnchorNumber({ value, label, tone = "ink", size = "default", className }: Props) {
   const numberSize =
     size === "hero"
-      ? "text-[clamp(6rem,18vw,15rem)]"
-      : "text-[clamp(3.5rem,10vw,8rem)]";
+      ? "text-[clamp(2.75rem,18vw,15rem)]"
+      : "text-[clamp(2.25rem,10vw,8rem)]";
   return (
     <div className={cn("space-y-4 md:space-y-6", className)}>
       <motion.div
@@ -24,7 +24,7 @@ export function AnchorNumber({ value, label, tone = "ink", size = "default", cla
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         className={cn(
-          "font-editorial anchor-number tabular",
+          "font-editorial anchor-number tabular break-words",
           numberSize,
           tone === "paper" ? "text-[var(--color-paper)]" : "text-[var(--color-ink)]",
         )}

@@ -6,12 +6,12 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function ServiceTiles() {
   return (
-    <div className="grid gap-px border border-[var(--color-hairline)] bg-[var(--color-hairline)] md:grid-cols-2 lg:grid-cols-3">
+    <div className="-mx-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-6 md:mx-0 md:grid md:grid-cols-2 md:gap-px md:overflow-visible md:border md:border-[var(--color-hairline)] md:bg-[var(--color-hairline)] md:px-0 md:pb-0 md:snap-none lg:grid-cols-3 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       {services.map((service, i) => (
         <Reveal
           key={service.slug}
           delay={i * 0.05}
-          className="bg-[var(--color-paper)] group"
+          className="group shrink-0 w-[82vw] max-w-[420px] snap-start border border-[var(--color-hairline)] bg-[var(--color-paper)] md:w-auto md:shrink md:max-w-none md:snap-align-none md:border-0"
         >
           <Link
             href={`/what-we-do/${service.slug}`}

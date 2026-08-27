@@ -1,5 +1,18 @@
-export type DealStatus = "Held" | "Exited" | "Active";
-export type DealStrategy = "Value-Add" | "Opportunistic" | "Core-Plus" | "Development" | "Special Situations";
+export type DealStatus = "Held" | "Exited" | "Active" | "Completed";
+export type DealStrategy =
+  | "Value-Add"
+  | "Opportunistic"
+  | "Core-Plus"
+  | "Development"
+  | "Special Situations"
+  | "Structuring"
+  | "Fund Management"
+  | "Advisory"
+  | "Acquisition"
+  | "Underwriting"
+  | "Capital Advisory"
+  | "M&A"
+  | "M&A (or Special Situations)";
 export type DealSector = "Residential" | "Commercial Office" | "Hospitality" | "Mixed-Use" | "Logistics" | "Branded Residences";
 
 export type Deal = {
@@ -29,7 +42,7 @@ export const deals: Deal[] = [
     country: "UAE",
     sector: "Branded Residences",
     strategy: "Development",
-    status: "Active",
+    status: "Exited",
     year: 2026,
     image: "/images/hero-banner.webp",
     anchor: { value: "4", label: "Lifecycle stages executed end-to-end" },
@@ -47,7 +60,7 @@ export const deals: Deal[] = [
     location: "UAE",
     country: "UAE",
     sector: "Mixed-Use",
-    strategy: "Special Situations",
+    strategy: "Structuring",
     status: "Active",
     year: 2026,
     image: "/images/Dubai_Skyline.jpg",
@@ -66,7 +79,7 @@ export const deals: Deal[] = [
     location: "UAE",
     country: "UAE",
     sector: "Mixed-Use",
-    strategy: "Core-Plus",
+    strategy: "Fund Management",
     status: "Active",
     year: 2026,
     image: "/images/about-buildings.jpg",
@@ -85,8 +98,8 @@ export const deals: Deal[] = [
     location: "GCC",
     country: "UAE",
     sector: "Residential",
-    strategy: "Core-Plus",
-    status: "Active",
+    strategy: "Advisory",
+    status: "Completed",
     year: 2026,
     image: "/images/iconic_background.jpg",
     anchor: { value: "End-to-end", label: "Strategy through execution for family principals" },
@@ -104,8 +117,8 @@ export const deals: Deal[] = [
     location: "UAE",
     country: "UAE",
     sector: "Residential",
-    strategy: "Opportunistic",
-    status: "Active",
+    strategy: "Acquisition",
+    status: "Completed",
     year: 2026,
     image: "/images/hero-3.webp",
     anchor: { value: "Primary", label: "Primary-market off-plan portfolio programme" },
@@ -123,8 +136,8 @@ export const deals: Deal[] = [
     location: "UAE",
     country: "UAE",
     sector: "Hospitality",
-    strategy: "Value-Add",
-    status: "Active",
+    strategy: "Underwriting",
+    status: "Completed",
     year: 2026,
     image: "/images/hero-2.webp",
     anchor: { value: "Fund-grade", label: "Underwriting workstream for institutional hotel acquisition" },
@@ -142,7 +155,7 @@ export const deals: Deal[] = [
     location: "DIFC, Dubai",
     country: "UAE",
     sector: "Commercial Office",
-    strategy: "Core-Plus",
+    strategy: "Capital Advisory",
     status: "Active",
     year: 2026,
     image: "/images/hero-1.webp",
@@ -161,8 +174,8 @@ export const deals: Deal[] = [
     location: "UAE",
     country: "UAE",
     sector: "Logistics",
-    strategy: "Special Situations",
-    status: "Active",
+    strategy: "M&A (or Special Situations)",
+    status: "Completed",
     year: 2026,
     image: "/images/dubai-aerial-hero1.jpg",
     anchor: { value: "Cross-border", label: "UAE logistics fund with cross-border M&A execution" },
@@ -181,7 +194,21 @@ export function dealBySlug(slug: string): Deal | undefined {
 
 export const dealFilters = {
   sectors: ["Residential", "Commercial Office", "Hospitality", "Mixed-Use", "Logistics", "Branded Residences"] as const,
-  strategies: ["Value-Add", "Opportunistic", "Core-Plus", "Development", "Special Situations"] as const,
-  statuses: ["Held", "Exited", "Active"] as const,
+  strategies: [
+    "Development",
+    "Structuring",
+    "Fund Management",
+    "Advisory",
+    "Acquisition",
+    "Underwriting",
+    "Capital Advisory",
+    "M&A",
+    "M&A (or Special Situations)",
+    "Value-Add",
+    "Opportunistic",
+    "Core-Plus",
+    "Special Situations",
+  ] as const,
+  statuses: ["Held", "Exited", "Active", "Completed"] as const,
   countries: ["UAE", "UK", "USA", "KSA"] as const,
 };
