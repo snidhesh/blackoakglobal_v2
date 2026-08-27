@@ -57,6 +57,10 @@ export async function POST(req: NextRequest) {
 
   const to = process.env.CONTACT_TO_EMAIL ?? "enquiries@blackoakglobal.com";
   const from = process.env.CONTACT_FROM_EMAIL ?? "website@blackoakglobal.com";
+  const cc = (process.env.CONTACT_CC_EMAIL ?? "it@blackoak-re.com")
+    .split(",")
+    .map((e) => e.trim())
+    .filter(Boolean);
   const apiKey = process.env.RESEND_API_KEY;
 
   if (!apiKey) {
@@ -81,6 +85,7 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from,
       to,
+      cc: cc.length > 0 ? cc : undefined,
       replyTo: email,
       subject,
       text,
