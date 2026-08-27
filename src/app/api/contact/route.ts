@@ -1,6 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { Resend } from "resend";
 import { rateLimit } from "@/lib/rate-limit";
+import { verifyTurnstile } from "@/lib/turnstile";
 
 type Payload = {
   firstName: string;
@@ -8,6 +9,7 @@ type Payload = {
   email: string;
   phone?: string;
   message: string;
+  turnstileToken?: string;
   // honeypot — should be empty
   company?: string;
 };
@@ -18,10 +20,11 @@ function isEmail(v: string) {
 
 export async function POST(req: NextRequest) {
   const ip =
+    req.headers.get("x-vercel-forwarded-for")?.split(",")[0].trim() ??
     req.headers.get("x-forwarded-for")?.split(",")[0].trim() ??
     req.headers.get("x-real-ip") ??
     "unknown";
-  const gate = rateLimit(`contact:${ip}`, 5, 60_000);
+  const gate = await rateLimit(`contact:${ip}`, 5, 60_000);
   if (!gate.ok) {
     return NextResponse.json(
       { ok: false, error: "Too many requests. Please try again shortly." },
@@ -36,9 +39,17 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: false, error: "Invalid request" }, { status: 400 });
   }
 
-  // Honeypot
+  // Honeypot — silent drop before any external verification call
   if (body.company && body.company.trim().length > 0) {
     return NextResponse.json({ ok: true }, { status: 200 });
+  }
+
+  const tsOk = await verifyTurnstile(body.turnstileToken, ip);
+  if (!tsOk) {
+    return NextResponse.json(
+      { ok: false, error: "Verification failed. Please try again." },
+      { status: 400 },
+    );
   }
 
   const { firstName, lastName, email, phone, message } = body;
