@@ -12,7 +12,7 @@ export type DealStrategy =
   | "Underwriting"
   | "Capital Advisory"
   | "M&A"
-  | "M&A (or Special Situations)";
+  | "M&A (Special Situations)";
 export type DealSector = "Residential" | "Commercial Office" | "Hospitality" | "Mixed-Use" | "Logistics" | "Branded Residences";
 
 export type Deal = {
@@ -174,7 +174,7 @@ export const deals: Deal[] = [
     location: "UAE",
     country: "UAE",
     sector: "Logistics",
-    strategy: "M&A (or Special Situations)",
+    strategy: "M&A (Special Situations)",
     status: "Completed",
     year: 2026,
     image: "/images/uae-logistics-fund.webp",
@@ -203,7 +203,7 @@ export const dealFilters = {
     "Underwriting",
     "Capital Advisory",
     "M&A",
-    "M&A (or Special Situations)",
+    "M&A (Special Situations)",
     "Value-Add",
     "Opportunistic",
     "Core-Plus",

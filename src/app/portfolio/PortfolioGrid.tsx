@@ -154,7 +154,7 @@ function DealCard({ deal }: { deal: Deal }) {
           </h3>
         </div>
       </div>
-      <div className="mt-6 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[9px] uppercase tracking-[0.14em] text-[var(--color-muted)]">
+      <div className="mt-6 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[10.5px] uppercase tracking-[0.16em] text-[var(--color-muted)]">
         <span className="whitespace-nowrap">{deal.sector}</span>
         <span aria-hidden>·</span>
         <span className="whitespace-nowrap">{deal.strategy}</span>
