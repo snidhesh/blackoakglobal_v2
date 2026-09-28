@@ -89,7 +89,7 @@ export const team: TeamGroup[] = [
         name: "Sarah Malik",
         title: "Legal",
         region: "UAE",
-        image: "/team/no-image.svg",
+        image: "/team/sarah-malik.png",
         bio: ["Profile coming soon."],
       },
     ],
