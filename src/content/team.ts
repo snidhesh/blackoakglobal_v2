@@ -87,7 +87,7 @@ export const team: TeamGroup[] = [
       {
         slug: "sarah-malik",
         name: "Sarah Malik",
-        title: "Legal",
+        title: "Chief Legal",
         region: "UAE",
         image: "/team/sarah-malik.png",
         bio: ["Profile coming soon."],
